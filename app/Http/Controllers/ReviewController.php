@@ -26,8 +26,8 @@ class ReviewController extends Controller
 
         $book->reviews()->create([
             'user_id' => Auth::id(),
-            'rating'  => $data['rating'],
-            'review'  => $data['review'] ?? null,
+            'rating' => $data['rating'],
+            'review' => $data['review'] ?? null,
         ]);
 
         return redirect()->route('books.show', $book)
