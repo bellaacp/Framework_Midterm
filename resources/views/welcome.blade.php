@@ -31,7 +31,7 @@
   </section>
 
   <section class="py-16">
-    <h2 class="text-2xl font-semibold text-center mb-10">CURRENT TOP 5 FAVORITES</h2>
+    <h2 class="text-2xl font-semibold text-center mb-10">TOP 5 FAVORITES</h2>
     <div class="flex justify-center gap-20 flex-wrap">
       <img src="{{ asset('images/thelongwalk.jpg') }}" alt="The Long Walk" class="w-40 rounded-lg shadow-md hover:scale-105 transition">
       <img src="{{ asset('images/midnightlibrary.jpg') }}" alt="The Midnight Library" class="w-40 rounded-lg shadow-md hover:scale-105 transition">
