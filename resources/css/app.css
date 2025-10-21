@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { background:#F1F8F4; color:#111827; font-family:'Poppins', ui-sans-serif, system-ui; }
+}
+
+@layer components {
+
+  .container-narrow { @apply mx-auto max-w-7xl px-12; } 
+
+  /*buttons*/
+  .btn  { @apply inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition; 
+  }
+  .btn-mint{ @apply bg-[#2E4739] text-white hover:bg-[#21352B];
+  }
+  .btn-ghost { @apply border border-gray-300 hover:bg-gray-50;
+  }
+
+  .pill{ @apply inline-flex items-center justify-center rounded-full px-3 py-2 text-sm shadow leading-none transition; }
+  .pill-mint{ @apply bg-[#2E4739] text-white hover:bg-[#21352B]; }
+
+  .card { @apply bg-white rounded-2xl shadow; }
+  .input{ @apply w-full rounded border border-gray-300 px-3 py-2; }
+  .select{ @apply rounded border border-gray-300 px-3 py-2;}
+  .textarea { @apply w-full rounded border border-gray-300 px-3 py-2;}
+
+/* layout */
+.main { @apply py-8; }
+.container-narrow { @apply mx-auto max-w-7xl px-12; 
+}
+
+/* navbar */
+.navbar{ @apply flex justify-between items-center px-8 py-4; background:#BFD8BF; }
+.brand { @apply text-2xl font-semibold; color:#2E4739; }
+.nav-actions  { @apply space-x-4; }
+.nav-greeting { color:#2E4739; }
+
+/* Flash messages */
+.flash-success { @apply mb-4 text-sm bg-green-100 border border-green-200 text-green-800 p-3 rounded; }
+
+/*Book index -*/
+.page-title { @apply text-2xl font-semibold text-gray-900 mb-6; }
+
+.books-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5
+          justify-items-center items-start;
+
+   gap-column: 4rem; 
+}
+
+  .books-grid { @apply gap-x-16 gap-y-12; }
+  .book-card { @apply flex flex-col items-start; }
+  .book-cover { @apply object-cover rounded shadow-md mb-3; width:180px; height:264px; }
+  .book-title { @apply font-semibold text-[#123]; }
+  .book-author { @apply text-sm text-gray-600 mb-3; }
+
+ 
+  .book-info { margin-top: 0.75rem; }
+  .book-info { height: 72px; } 
+
+  .pagination { @apply mt-10; }
+
+  /* showing book details */
+  .show-wrap { @apply flex gap-8; }
+  .show-cover-wrap { @apply w-1/4; }
+  .show-cover{ @apply w-full h-auto object-cover rounded shadow-md; }
+  .section-title { @apply text-xl font-semibold mb-3; }
+
+
+  .review-card { @apply bg-white rounded-2xl shadow p-4; }
+  .review-head { @apply flex justify-between items-start; }
+  .review-meta { @apply text-sm text-gray-600; }
+  .review-text{ @apply mt-2; }
+  .review-actions{ @apply flex items-center gap-2 whitespace-nowrap shrink-0 self-start; }
+}
+.edit-container { @apply max-w-3xl; }
+.card-lg { @apply card p-6; }       
+.form-title { @apply text-lg font-semibold mb-4; }
+.form-stack { @apply space-y-4; }
+.form-label { @apply block text-sm mb-1; }
+.form-actions { @apply flex gap-2; }
+.select-sm { @apply w-28; }
