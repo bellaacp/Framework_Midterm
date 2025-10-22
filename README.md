@@ -13,11 +13,11 @@
 
 ## Features
 
-### For guests (no login required)
+### For Guests (No Login Required)
 - View the full **Book List** grid.
 - Open **Book Detail** pages with description, and existing reviews from other users.
 
-### For authenticated users
+### For Logged-in Users
 - **Add a review** (rating 1–5 and optional text).
 - **Edit/Delete** only your own review.
 - Basic book management (create/edit/delete).
