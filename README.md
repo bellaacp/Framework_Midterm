@@ -18,7 +18,7 @@
 - Open **Book Detail** pages with description, and existing reviews from other users.
 
 ### For Logged-in Users
-- **Add a review** (rating 1–5 and optional text).
+- **Add a review** (rating 1–5 and give comments).
 - **Edit/Delete** only your own review.
 - Basic book management (create/edit/delete).
 
